@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--The Top View of the Calculator-->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text="@string/test"
+        android:textSize="80sp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        />
+
+    <!--    LinearLayout holding the other Linear Layout containing buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        >
+
+        <!--    First Row of Buttons: C, +/-, %, and / -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <!--        Clear -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bClear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/clear"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        Signs-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bSign"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/sign"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        Percent -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bPercent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/percent"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        Division-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bDivision"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/divide"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+        <!--    Second Row of Buttons: 7, 8, 9, X -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <!--        7 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/seven"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        8-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/eight"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        9 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/nine"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        Multiply-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bMultiply"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/multiply"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+        <!--    Third Row of Buttons: 4, 5, 6, - -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--        4 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/four"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        5-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/five"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        6 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/six"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp">
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        Subtract -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bSubtract"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/subtract"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp">
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+        <!--    Fourth Row of Buttons: 1, 2, 3, + -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <!--        1 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/one"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        2-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/two"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        3 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/three"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        Addition -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bAddition"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/addition"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+        <!--    Last Row of Buttons: 0, . , = -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <!--        0 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/zero"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        decimal -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bDecimal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/decimal"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+
+                >
+            </com.google.android.material.button.MaterialButton>
+
+            <!--        equals -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bEquals"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/equals"
+                android:layout_margin="2dp"
+                android:textSize="30sp"
+                app:cornerRadius="5dp"
+                >
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
