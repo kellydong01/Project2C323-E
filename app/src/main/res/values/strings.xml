@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Project2C323-E</string>
-    <string name="test"> Test</string>
+    <string name="test"> 0</string>
     <string name="clear"> C</string>
     <string name="sign"> +/-</string>
     <string name="percent"> %</string>
